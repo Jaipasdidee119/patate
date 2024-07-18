@@ -16,7 +16,7 @@ const listenToAdd = (buttons) => {
       }
       dataLayer.push({
         event: 'addToCart',
-        items: { id, name, price },
+        item: { id, name, price },
         location: location
       })
     })
