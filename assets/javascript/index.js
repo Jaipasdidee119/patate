@@ -16,9 +16,10 @@ const listenToAdd = (buttons) => {
       }
       dataLayer.push({
         event: 'addToCart',
+        ecommerce: {
         currency: "USD",
         value: price,
-        items: { id, name, price },
+        items: [{ id, name, price }]},
         location: location
       })
     })
